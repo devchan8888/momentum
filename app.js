@@ -29,9 +29,8 @@ if (savedUsername === null) {
 const clock = document.querySelector('#clock');
 const calendar = document.querySelector('#calendar');
 
-const time = new Date();
-
 function getTime() {
+  const time = new Date();
   const month = String(time.getMonth()).padStart(2, '0');
   const date = String(time.getDate()).padStart(2, '0');
 
@@ -44,3 +43,4 @@ function getTime() {
 }
 
 getTime();
+setInterval(getTime, 1000);
