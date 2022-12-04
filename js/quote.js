@@ -1,4 +1,4 @@
-quotes = [{'text': '삶이 있는 한 희망은 있다', 'author': '키케로'},
+const quotes = [{'text': '삶이 있는 한 희망은 있다', 'author': '키케로'},
     {'text': '산다는것 그것은 치열한 전투이다.', 'author': '로망로랑'},
     {'text': '하루에 3시간을 걸으면 7년 후에 지구를 한바퀴 돌 수 있다.', 'author': '사무엘존슨'},
     {'text': '언제나 현재에 집중할수 있다면 행복할것이다.', 'author': '파울로 코엘료'},
@@ -41,5 +41,12 @@ quotes = [{'text': '삶이 있는 한 희망은 있다', 'author': '키케로'},
     {'text': '인생을 다시 산다면 다음번에는 더 많은 실수를 저지르리라', 'author': '나딘 스테어'},
     {'text': '인생에서 원하는 것을 엇기 위한 첫번째 단계는 내가 무엇을 원하는지 결정하는 것이다', 'author': '벤스타인'},
     {'text': '용기의 둑을 쌓아야 한다.', 'author': '마틴 루터 킹'},
-    {'text': '멸망시킬수도 다시 소생시킬수도 있다', 'author': '소포클레스'}]
+    {'text': '멸망시킬수도 다시 소생시킬수도 있다', 'author': '소포클레스'}
+]
 
+const quote = document.querySelector("#quote span:first-child")
+const author = document.querySelector("#quote span:last-child")
+const todayQuote = quotes[Math.floor(Math.random() * quotes.length)]
+
+quote.innerText = todayQuote.text
+author.innerText = todayQuote.author
