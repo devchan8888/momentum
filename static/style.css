@@ -22,7 +22,11 @@ body {
     align-items: center;
     justify-content: center;
 
-    height: 100vh;
+    height: 90vh;
+}
+
+ul{
+    list-style: none;
 }
 
 #greeting {
@@ -38,8 +42,16 @@ body {
 }
 
 #quote {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
+}
+
+#quote .author {
+    font-size: 15px;
+}
+
+#quote span {
+    display: block;
 }
 .author {
     font-style: italic;
